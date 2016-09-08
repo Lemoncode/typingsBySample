@@ -1,6 +1,6 @@
 # Sample 01: Typings
 
-In this sample we will use JQuery library installing the typgins definitions
+In this sample we will use JQuery library installing the typings definitions
 
 Summary:
 
@@ -16,6 +16,8 @@ Summary:
 
 
 # Guide to reproduce this sample
+
+Start by copying a fresh cut from "Sample 00: Start"
 
 We will start by installing the jquery package from node package manager (console command prompt):
 
