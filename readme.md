@@ -2,6 +2,9 @@
 
 Guide to add typings support to your project (typescript definitions).
 
+Each of the samples contains a readme.md files where you can find an step
+by step guide to reproduce the sample (except the startup one).
+
 Samples:
 
 - 00 Startup project: simple typescript project
