@@ -1,7 +1,7 @@
-# Sample 02: No Typings
+# Sample 03: No Typings_B
 
 In this sample we are going to learn how to import javascript libraries that
-doesn't have a a typings file associated. We will take as starting point sample "00 Start"
+doesn't have a a typings file associated. We will take as starting point sample "02 NoTypings A"
 
 ** REMARK: We are going to assume and hypotetical case: let's think that JQuery
 has no typings definition, and let's use it withouth the definitions. This is
@@ -28,29 +28,31 @@ execute:
 npm install
 ````
 
-We will start by installing the jquery package from node package manager (console command prompt):
+Let's import node.d.ts definition
 
-```
-npm install jquery --save
-```
+Let's search for the node.d.ts definition
 
-Let's try to add some JQuery code to our main
-
-````javascript
-$('body').css('background-color', 'blue');
+````
+typings search --name node
 ````
 
-We get a typescript error message:
+Le't install node.d.ts definition
 
-In order to fix this, we can define a require function, and import the JQuery without dependencies
+```
+typings install dt~node --save --global
+```
 
-```javascript
-declare function require(name:string);
+
+Now we can go back to our main.ts and remove the _declare require_
+
+````javascript
 var $ = require('jquery');
 
 $('body').css('background-color', 'blue');
-```
+document.write(" - Hello from Javascript");
+````
 
+This time we dont' get typescript error messages.
 
 Now to run the sample, run the following command from the command prompt:
 
