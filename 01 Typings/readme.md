@@ -47,7 +47,7 @@ Let's initialize our project typings file:
 typings init
 ````
 
-It's time to search for jquery typedefintions, first we are going to search for them:
+It's time to search for jquery type definitions, first we are going to search for them:
 
 ````
 typings search --name jquery
@@ -65,6 +65,8 @@ jus to change the body background color, we can check we get no errors and intel
 support
 
 ````javascript
+import * as $ from "jquery";
+
 $('body').css('background-color', 'blue');
 ````
 
@@ -86,4 +88,17 @@ In Package json add this:
    "postinstall": "typings install",
    "start": "webpack-dev-server",
  },
+````
+
+_Note: if you are using libraries like bootstrap, it's a good idea to define JQuery and a global name in your wepack.config.js, you can find more
+info about this in the following sample: [webpack jquery sample](https://github.com/Lemoncode/webpack-1.x-by-sample/tree/master/00%20Intro/04%20Jquery_)
+
+````javascript
+plugins:[
+  new webpack.ProvidePlugin({
+        $: "jquery",
+        jQuery: "jquery"
+  }),
+//...
+]
 ````
