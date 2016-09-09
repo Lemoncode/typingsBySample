@@ -4,7 +4,7 @@ In this sample we will use JQuery library installing the typings definitions
 
 Summary:
 
-- Install Jquery plugin and add proper configuration to fit into webpack model (legacy library).
+- Install Jquery package.
 - Install typings globally.
 - Add typings dependency to the locale package.json list.
 - Initialize typings file.
@@ -18,6 +18,15 @@ Summary:
 # Guide to reproduce this sample
 
 Start by copying a fresh cut from "Sample 00: Start"
+
+The first time when you download the sample do not forget to install the dependencies,
+open the command prompt or bash navigate to the project 00 Start folder and
+execute:
+
+````
+npm install
+````
+
 
 We will start by installing the jquery package from node package manager (console command prompt):
 
@@ -60,7 +69,7 @@ install them
 typings install dt~jquery --global --save
 ````
 
-Now that we have the typings install, we can add some JQuery code in our main.ts
+Now that we have the typings installed, we can add some JQuery code in our main.ts
 jus to change the body background color, we can check we get no errors and intellisense
 support
 
