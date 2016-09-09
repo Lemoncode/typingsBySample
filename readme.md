@@ -9,7 +9,10 @@ Samples:
 
 - 00 Startup project: simple typescript project
 - 01 Typings: setting up and adding a dependency via typings.
-- 02 No Definitions: importing a library with no definitions using require
+- 02 No Typings A: Adding a dummy require declaration.
+- 03 No Typings B: Importing node.d.ts approach.
+- 04 Manual Typings: Creating a custom typing (use this when you cannot find the
+  typings definitions for a given library)
 
 Next samples:
 
