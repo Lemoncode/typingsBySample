@@ -1,4 +1,3 @@
-
 import * as ssnValidator from "ssn-validator"
 
 const result : boolean = ssnValidator.isValid('011-23-4567')

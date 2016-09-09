@@ -1,7 +1,0 @@
-{
-  "name": "boilerplate",
-  "dependencies": {},
-  "globalDependencies": {
-    "index": "file:typingsManual/ssn-validator/index.d.ts"
-  }
-}

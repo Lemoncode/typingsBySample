@@ -98,9 +98,9 @@ We can open or browse in github the source code of this library (index.js is
 the main entry point), by browsing index.js we can get an idea of the
 functions we need to expose via typings
 
-Now Let's create a subfolder called typingsManual
+Now Let's create two subfolders called typingsManual/ssn-validator
 
-And let's place inside that subfolder a file named _ssn-validator.d.ts_ this
+And let's place inside that subfolder a file named _index.d.ts_ this
 file will have the following content
 
 ```javascript
@@ -110,10 +110,15 @@ declare module "ssn-validator" {
 }
 ```
 
-Let's install the filed dependency in typings
+Now we can import that library and we can check that we get intellisense + strong typings
 
-```
-typings install file:typingsManual/ssn-validator/index.d.ts --save --global
+```javascript
+import * as ssnValidator from "ssn-validator"
+
+const result : boolean = ssnValidator.isValid('011-23-4567')
+const message : string = ` - Validate 011-23-4567 success: ${result}`
+
+document.write(message);
 ```
 
 Let's run the sample

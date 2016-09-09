@@ -9,8 +9,7 @@
       "suppressImplicitAnyIndexErrors": true
     },
     "compileOnSave": false,
-    "exclude": [
-        "typingsManual", 
+    "exclude": [        
         "node_modules"
     ],
     "atom": {
