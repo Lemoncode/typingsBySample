@@ -10,6 +10,7 @@
     },
     "compileOnSave": false,
     "exclude": [
+        "typingsManual", 
         "node_modules"
     ],
     "atom": {

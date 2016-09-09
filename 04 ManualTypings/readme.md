@@ -103,6 +103,18 @@ Now Let's create a subfolder called typingsManual
 And let's place inside that subfolder a file named _ssn-validator.d.ts_ this
 file will have the following content
 
+```javascript
+declare module "ssn-validator" {
+    export function isValid(value : string) : boolean;
+    export function mask(value : string) : string;
+}
+```
+
+Let's install the filed dependency in typings
+
+```
+typings install file:typingsManual/ssn-validator/index.d.ts --save --global
+```
 
 Let's run the sample
 

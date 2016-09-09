@@ -17,6 +17,6 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "is-valid-ssn": "0.0.2"
+    "ssn-validator": "^2.0.1"
   }
 }
