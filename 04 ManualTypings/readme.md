@@ -9,7 +9,7 @@ In this sample we are going to simulate the following scenarios:
 What we will do is: create a manual typings defintions and register it.
 
 We have chosen a library to validate SSN (U.S. Social Security number),
-[npm link](https://www.npmjs.com/package/is-valid-ssn)
+[npm link](https://github.com/seegno/ssn-validator)
 
 This library is fairly simple and a good entry point to start defining our
 custom definition files, main js file:
