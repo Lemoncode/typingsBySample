@@ -3,16 +3,12 @@
 In this sample we will use JQuery library installing the typings definitions in Typescript 2.0
 
 Summary:
-
-- Install Jquery package.
-- Install typings globally.
-- Add typings dependency to the locale package.json list.
-- Initialize typings file.
-- Search for JQuery typings.
-- Install JQuery typings.
+- Install dependencies
+- Install typescript 2.0 package.
+- Install jquery typings
+- Install jquery.
 - Add some JQuery code.
 - Launch the project.
-- Add a postInstall step to package json.
 
 
 # Guide to reproduce this sample
