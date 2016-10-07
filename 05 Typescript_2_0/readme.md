@@ -43,14 +43,3 @@ $('body').css('background-color', 'lightblue');
 ```
 npm start
 ```
-
-- _Note: if you are using libraries like bootstrap, it's a good idea to define JQuery and a global name in your wepack.config.js (You can uncomment), you can find more info about this in the following sample: [webpack jquery sample](https://github.com/Lemoncode/webpack-1.x-by-sample/tree/master/00%20Intro/04%20Jquery_):
-```javascript
-plugins:[
-  new webpack.ProvidePlugin({
-        $: "jquery",
-        jQuery: "jquery"
-  }),
-//...
-]
-```
